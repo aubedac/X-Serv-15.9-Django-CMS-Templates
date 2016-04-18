@@ -1,0 +1,16 @@
+<html>
+<body>
+      <h1>Add new Page:</h1>
+      You're {{user}} <a href="/logout/"> LOGOUT </a>
+      <form method="post" action="/annotated/insert/">
+      {% csrf_token %}
+      <table>
+      <tr><td>Page:</td>
+      <td><input type="text" name="key"></td></tr>
+      <tr><td>Content:</td>
+      <td><input type="text" name="value"></td></tr>
+      </table>
+<input type="submit" value="Submit" /></br>
+</form>
+</body>
+</html>
